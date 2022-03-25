@@ -1,0 +1,80 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('E:/SCET/Isha sem-6/Awp/200420116504_mp1/imag/01.jpg');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('E:/SCET/Isha sem-6/Awp/200420116504_mp1/imag/02.jpg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('E:/SCET/Isha sem-6/Awp/200420116504_mp1/imag/03.jpg');
+  min-height:400px;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#fcccb9;
+  color:rgb(102, 102, 102);
+}
+
+.section-dark{
+  background-color:#fcb599;
+  color:rgb(65, 65, 65);
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:rgb(236, 101, 101);
+  color:rgb(0, 0, 0);
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:rgb(236, 101, 101);;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
